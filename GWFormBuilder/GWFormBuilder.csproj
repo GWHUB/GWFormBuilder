@@ -49,6 +49,14 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.121.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Oracle.ManagedDataAccess.12.1.2400\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess.EntityFramework, Version=6.121.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Oracle.ManagedDataAccess.EntityFramework.12.1.2400\lib\net45\Oracle.ManagedDataAccess.EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -174,21 +182,57 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\DRR_CRF_TEMPLET.cs" />
+    <Compile Include="Models\DRR_CRF_VS_DATASET.cs" />
+    <Compile Include="Models\DRR_CRF_VS_METADATA.cs" />
+    <Compile Include="Models\DRR_DATAMETAFIELDCHIRLD.cs" />
+    <Compile Include="Models\DRR_DATAMETALOGICAL.cs" />
+    <Compile Include="Models\DRR_DATAMETAREG.cs" />
+    <Compile Include="Models\DRR_DATAMETAREG_COMM.cs" />
+    <Compile Include="Models\DRR_DATAMETA_DICT.cs" />
+    <Compile Include="Models\DRR_DATAMETA_DISPLAY.cs" />
+    <Compile Include="Models\DRR_DATAMETA_FEATURE_DICT.cs" />
+    <Compile Include="Models\DRR_DATAMETA_FIELD_CODE.cs" />
+    <Compile Include="Models\DRR_DATAMETA_FIELD_CODE_VALUE.cs" />
+    <Compile Include="Models\DRR_DATAMETA_GROUP.cs" />
+    <Compile Include="Models\DRR_DATAMETA_GROUP_VS_DATAMETA.cs" />
+    <Compile Include="Models\DRR_DATAMETA_LOGICAL.cs" />
+    <Compile Include="Models\DRR_DATAMETA_OBJECT_DICT.cs" />
+    <Compile Include="Models\DRR_DATASET_DICT.cs" />
+    <Compile Include="Models\DRR_DATASET_FIELD_CODE.cs" />
+    <Compile Include="Models\DRR_DATASET_FIELD_CODE_VALUE.cs" />
+    <Compile Include="Models\DRR_DATASET_VS_DATAMETA.cs" />
+    <Compile Include="Models\DRR_DIAGNOSIS_DICT.cs" />
+    <Compile Include="Models\DRR_DISEASEDICT.cs" />
+    <Compile Include="Models\DRR_PROJECTINFO.cs" />
+    <Compile Include="Models\DRR_SYSTEM_POWER.cs" />
+    <Compile Include="Models\DRR_SYSTEM_ROLE.cs" />
+    <Compile Include="Models\DRR_SYSTEM_ROLE_POWER.cs" />
+    <Compile Include="Models\DRR_SYSTEM_USER.cs" />
+    <Compile Include="Models\DRR_SYSTEM_USER_ROLE.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -236,15 +280,15 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Shared\_LayoutFB.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include=".bin\" />
     <Folder Include="App_Data\" />
+    <Folder Include="assets\" />
+    <Folder Include="js\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config">
       <SubType>Designer</SubType>
     </Content>
